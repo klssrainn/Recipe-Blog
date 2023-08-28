@@ -12,7 +12,7 @@
         }
         body .container {
             margin: auto;
-            width: 50%;
+            width: 70%;
             border: 2px solid rgb(210, 207, 207);
             padding: 10px;
             background-color: silver;
@@ -24,11 +24,18 @@
         }
         h1, h2 {
             color:rgb(72, 11, 11);
+        
+        }
+        h1 {
+            font-size: 35px;
+        }
+        h1 {
+            font-size: 30px;
         }
         .steps {
             font-weight: bold;
         }
-        .method {
+        .method , .ilist {
             font-style: italic;
             font-size: 15px;
         }
@@ -37,6 +44,25 @@
             font-size: 20px;
             padding-left: 2rem;
             font-weight: bold;
+        }
+        @media (max-width: 680px) {
+            h1 {
+            font-size: 25px;
+            display:inline;
+        }
+            h2 {
+            font-size: 15px;
+        }
+            .method , .ilist {
+                font-size: 10px;
+            }
+            .yield {
+                font-size: 15px;
+            }
+            body .container {
+                padding: 0.5rem;
+                width: 90%;
+            }
         }
     </style>
 </head>
@@ -52,7 +78,7 @@
             </div>
             <div class="icontainer">
                 <h2 class="ingredients">What do I need?</h2>
-                <ul>
+                <ul class="ilist">
                     <li>1 cup natural unsweetened cocoa powder</li>
                     <li>1 1/2 cups granulated sugar</li>
                     <li>1/2 cup vegetable oil</li>
